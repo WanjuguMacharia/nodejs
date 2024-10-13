@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine - Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Admin</h1>
+    <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="signup.html">Sign up</a> | <a href="doctor.html">Doctors</a> | <a href="appointment.html">Appointments</a> | <a href="signIn.html"> Sign in</a> | <a href="contact.html">Contacts</a>
+</header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Manage Doctors</h2>
+    <table id="adminDoctorsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="adminDoctorsBody">
+            <!-- Populate with doctors data -->
+        </tbody>
+    </table>
+
+    <h2>Manage Appointments</h2>
+    <table id="adminAppointmentsTable">
+        <thead>
+            <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="adminAppointmentsBody">
+            <!-- Populate with appointments data -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

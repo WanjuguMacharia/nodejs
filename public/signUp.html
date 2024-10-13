@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Sign Up</h1>
+    <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="signin.html">Sign in</a> | <a href="doctor.html">Doctors</a> | <a href="appointment.html">Appointments</a> | <a href="admin.html"> Admin</a> | <a href="contact.html">Contacts</a>
+</header>
+<div class="container">
+    <div class="box">
+        <h2>Sign up</h2>
+        <form action="submit" name="form" id="form">
+            <input type="text" id="fname" name="fname" placeholder="Fist Name" autocomplete="given-name">
+            <br><span id="fname_error"></span><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="given-name">
+            <br><span id="lname_error"></span><br>
+            <input type="text" id="username" name="username" placeholder="Username" autocomplete="given-name">
+            <br><span id="username_error"></span><br>
+            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off">
+            <br><span id="email_error"></span><br>
+            <input type="number" id="phone" name="phone" placeholder="Phone number" autocomplete="off">
+            <br><span id="phone_error"></span><br>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br><span id="password_error"></span><br>
+            <input type="password" id="password2" name="password2" placeholder="Confirm Password">
+            <br><span id="password2_error"></span><br>
+            <input type="date" id="date_of_birth" name="date_of_birth" placeholder="Date of birth" autocomplete="off">
+            <br><span id="date_of_birth_error"></span><br>
+            <input type="text" id="address" name="address" placeholder="Address" autocomplete="given-name">
+            <br><span id="address_error"></span><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span id="gender_error"></span><br>
+            <label for="contactMethod">Preferred Contact Method:</label><br>
+            <input type="radio" id="contactEmail" name="contactMethod" value="email"> Email<br>
+            <input type="radio" id="contactPhone" name="contactMethod" value="phone"> Phone<br>
+            <span id="contactMethod_error"></span><br>
+            <label>Terms and conditions <input type="checkbox" name="terms" id="terms"></label>
+            <br><span id="terms_error"></span><br>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <div class="box">
+        <h3>Summary</h3>
+        <p><strong>First Name:</strong> <span id="summaryFName">Not provided</span></p>
+        <p><strong>Last Name:</strong> <span id="summaryLName">Not provided</span></p>
+        <p><strong>Username:</strong> <span id="summaryUsername">Not provided</span></p>
+        <p><strong>Email:</strong> <span id="summaryEmail">Not provided</span></p>
+        <p><strong>Phone:</strong> <span id="summaryPhone">Not provided</span></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

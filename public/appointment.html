@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine - Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Appoinyments</h1>
+    <a href="index.html">Home</a> | <a href="about.html">About us</a> | <a href="signup.html">Sign up</a> | <a href="doctor.html">Doctors</a> | <a href="signIn.html">Sign in</a> | <a href="admin.html"> Admin</a> | <a href="contact.html">Contacts</a>
+</header>
+
+<div class="container">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+        <label for="doctor_id">Select Doctor:</label>
+        <select id="doctor_id" name="doctor_id" required>
+            <!-- Populate with doctor options -->
+        </select>
+        
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required>
+        
+        <label for="appointment_time">Appointment Time:</label>
+        <input type="time" id="appointment_time" name="appointment_time" required>
+        
+        <button type="submit">Book Appointment</button>
+        <span id="appointment_error"></span>
+    </form>
+
+    <h2>Upcoming Appointments</h2>
+    <table id="appointmentsTable">
+        <thead>
+            <tr>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="appointmentsBody">
+            <!-- Populate with patient's upcoming appointments -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
